@@ -25,8 +25,7 @@ def get_state_from_observation(obs):
     elif sin_theta < 0 and cos_theta < 0:
         theta = -np.pi - theta
 
-    return (theta, vel)
-    
+    return (theta, vel) 
 
 
 if __name__ == '__main__':
@@ -76,7 +75,6 @@ if __name__ == '__main__':
             num_data_per_state=num_data_per_state, 
             obs=get_state_from_observation
         )
-        # Pendulum_MDP = {}
 
         filename = 'pendulum_mdp.pkl'
         with open(filename, 'wb') as f:
@@ -109,7 +107,7 @@ if __name__ == '__main__':
             
         all_rewards.append(total_reward)
 
-    print(f"Pendulum average reward over {num_episodes} runs: {np.mean(all_rewards):.2f} (std {np.std(all_rewards):.2f})")
+    print(f"Pendulum average reward over {num_episodes} runs: {np.mean(all_rewards):.2f}")
 
     # use this if you would like to render the environment
     # env = gym.make('Pendulum-v1', render_mode = 'human').env.unwrapped

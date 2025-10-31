@@ -9,7 +9,6 @@ import pickle
 import time
 
 
-
 if __name__ == '__main__':
 
     np.random.seed(1)
@@ -97,7 +96,7 @@ if __name__ == '__main__':
         all_rewards.append(total_reward)
 
     avg_reward = np.mean(all_rewards)
-    print(f"MountainCar average reward over {num_episodes} runs: {avg_reward:.2f} (std {np.std(all_rewards):.2f})")
+    print(f"MountainCar average reward over {num_episodes} runs: {avg_reward:.2f}")
     
     # use this if you would like to render the environment
     # env = gym.make('MountainCarContinuous-v0', render_mode = 'human').env.unwrapped
