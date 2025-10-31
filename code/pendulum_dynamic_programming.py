@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     train_gamma = 0.9
     # sim_gamma = 1
-    T = 1000
+    T = 5000
     num_episodes = 100
 
     V, pi = value_iteration(Pendulum_MDP, Pendulum_MDP["actions"], train_gamma, eps=1e-3, max_iterations=10000)
