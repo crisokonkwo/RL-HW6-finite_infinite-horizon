@@ -4,8 +4,6 @@ This project implements dynamic programming algorithms for reinforcement learnin
 
 ## Mountain Car: finite-horizon Dynamic Programming
 
-### Overview
-
 The real environments have continuous states (e.g., position ∈ [-1.2, 0.6], velocity ∈ [-0.07, 0.07]) and continuous actions (e.g., thrust ∈ [-1, 1]).So we have to approximate the continuous action space by picking a few representative actions. Dynamic programming only works if both states and actions are discrete. So we must approximate:In MountainCarContinuous-v0, the environment’s state is a 2-D vector:
 
 In MountainCarContinuous-v0, the state is a 2-D vector: `s = [position, velocity]`. Both are continuous with ranges:
